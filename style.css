@@ -4,12 +4,38 @@ body{
 
 .center{
   text-align: center;
+  color: #273550;
 }
 
 #title{
   margin-bottom: 0;
+  font-size: 60px;
 }
 
 #author{
   margin-top: 0;
+  font-size: 30px;
+}
+
+.box{
+  width: var(--size);
+  height: var(--size);
+  border-radius: 15%;
+  border-style: solid;
+  border-color: #273550;
+  background-color: #6495ed;
+  
+}
+
+#grid{
+  display: grid; 
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: 3;
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+:root{
+  --size: 200px;
 }
