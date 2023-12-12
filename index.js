@@ -21,14 +21,12 @@ function test(id) {
     }
     xTurn = !xTurn;
   }
+  checkWinner();
 }
 
-function checkWinner(letter) {
-  var has = [];
-  for (var i = 0; i < 9; i++) {
-    if (board[i] == letter) {
-      has.push(i);
-    }
+function checkWinner() {
+  if (win.some(same)) {
+    game = false;
   }
 }
 
@@ -42,3 +40,28 @@ const win = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
+function same(combo) {
+  var first = combo[0];
+  var second = combo[1];
+  var third = combo[2];
+
+  console.log(first);
+  console.log(second);
+  console.log(third);
+
+  console.log("--------------------------------------------");
+
+  if (board[first] == "" || board[second] == "" || board[third] == "") {
+    return false;
+  } else {
+    console.log(board[first]);
+    console.log(board[second]);
+    console.log(board[third]);
+
+    console.log(board[first] == board[second] && board[first] == board[third]);
+
+    console.log("--------------------------------------------");
+    return board[first] == board[second] && board[first] == board[third];
+  }
+}
