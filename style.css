@@ -1,3 +1,15 @@
 body{
   background-color: bisque;
 }
+
+.center{
+  text-align: center;
+}
+
+#title{
+  margin-bottom: 0;
+}
+
+#author{
+  margin-top: 0;
+}
