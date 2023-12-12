@@ -24,7 +24,21 @@ body{
   border-style: solid;
   border-color: #273550;
   background-color: #6495ed;
+
+  text-align: center;
+  line-height: 250px;
+  font-size: 150px;
+  font-family: fantasy;
   
+  
+}
+
+.X{
+  color:rgb(74, 7, 191)
+}
+
+.O{
+  color:rgb(14, 104, 94)
 }
 
 #grid{
