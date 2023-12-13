@@ -48,6 +48,45 @@ body{
   grid-gap: 10px;
   justify-content: center;
   margin-top: 50px;
+  margin-right: 100px;
+}
+
+#row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin-left: 100px;
+}
+
+#InfoTitle{
+  color: #273550;
+  font-size: 100px;
+  font-family: monospace;
+  text-decoration: underline;
+  padding-top: 100px;
+  padding-left: 25px;
+}
+
+#Player{
+  display: grid;
+  height: 300px;
+  width: 300px;
+  background-color: #ed6464;
+  border-radius: 10%;
+  
+}
+
+#Playtext{
+  margin-left: 75px;
+  height: 200px;
+  color: #273550;
+  font-size:250px;
+  font-family:fantasy;
+
+}
+
+#Tracker{
+  display: inline-block;
+  padding-left: 50px;
 }
 
 :root{
