@@ -75,7 +75,7 @@ body{
   
 }
 
-#Playtext{
+.BigInfo{
   margin-left: 75px;
   height: 200px;
   color: #273550;
@@ -127,5 +127,7 @@ body{
   background-color: #303030;
   font-weight: bold;
   color:azure;
+  cursor: pointer;
 }
+
 

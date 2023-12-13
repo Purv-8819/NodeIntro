@@ -2,23 +2,27 @@ board = ["", "", "", "", "", "", "", "", ""];
 var xTurn = true;
 game = true;
 
-function test(id) {
+function play(id) {
   var index = id - 1;
   var box = document.getElementById(id);
+  var turnText = document.getElementById("Playtext");
   if (!game) {
     return;
   }
 
   if (board[index] == "") {
     if (xTurn) {
+      turnText.innerHTML = "O";
       board[index] = "X";
       box.classList.add("X");
       box.innerHTML = "X";
     } else {
+      turnText.innerHTML = "X";
       board[index] = "O";
       box.classList.add("O");
       box.innerHTML = "O";
     }
+
     xTurn = !xTurn;
   }
   checkWinner();
@@ -27,7 +31,32 @@ function test(id) {
 function checkWinner() {
   if (win.some(same)) {
     game = false;
+    var winText = document.getElementById("Wintext");
+    if (xTurn) {
+      winText.innerHTML = "O";
+    } else {
+      winText.innerHTML = "X";
+    }
   }
+}
+
+function reset() {
+  var winText = document.getElementById("Wintext");
+  winText.innerHTML = " ";
+  board = ["", "", "", "", "", "", "", "", ""];
+  xTurn = true;
+  game = true;
+
+  for (var i = 0; i < 9; i++) {
+    var index = i + 1;
+    var box = document.getElementById(index);
+    box.innerHTML = " ";
+    box.classList.remove("X");
+    box.classList.remove("O");
+  }
+
+  var playText = document.getElementById("Playtext");
+  playText.innerHTML = "X";
 }
 
 const win = [
