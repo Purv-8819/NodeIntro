@@ -75,6 +75,13 @@ body{
   
 }
 
+.tie{
+  font-size: 150px !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  padding-top: 70px;
+  margin-left: 55px !important;
+}
+
 .BigInfo{
   margin-left: 75px;
   height: 200px;
@@ -129,5 +136,7 @@ body{
   color:azure;
   cursor: pointer;
 }
+
+
 
 

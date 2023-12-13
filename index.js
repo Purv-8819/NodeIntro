@@ -26,6 +26,7 @@ function play(id) {
     xTurn = !xTurn;
   }
   checkWinner();
+  checkTie();
 }
 
 function checkWinner() {
@@ -57,6 +58,19 @@ function reset() {
 
   var playText = document.getElementById("Playtext");
   playText.innerHTML = "X";
+}
+
+function checkTie() {
+  if (game) {
+    for (var i = 0; i < 9; i++) {
+      if (board[i] == "") {
+        return;
+      }
+    }
+    var winText = document.getElementById("Wintext");
+    winText.innerHTML = "Tie";
+    winText.classList.add("tie");
+  }
 }
 
 const win = [
