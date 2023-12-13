@@ -30,7 +30,6 @@ body{
   font-size: 150px;
   font-family: fantasy;
   
-  
 }
 
 .X{
@@ -139,4 +138,91 @@ body{
 
 
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .box{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: #273550;
+    background-color: #6495ed;
+  
+    text-align: center;
+    line-height: 125px;
+    font-size: 75px;
+    font-family: fantasy;
+    }
 
+  #grid{
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 0;
+      justify-content: center;
+      margin-right: 100px;
+  }
+
+  #InfoTitle{
+    color: #273550;
+    font-size: 50px;
+    font-family: monospace;
+    text-decoration: underline;
+    padding-top: 100px;
+    padding-left: 25px;
+  }
+
+  #WinTitle{
+    color: #273550;
+    font-size: 50px;
+    font-family: monospace;
+    text-decoration: underline;
+    padding-top: 100px;
+    padding-left: 60px;
+  }
+  
+  .BigInfo{
+    margin-left: 75px;
+    height: 200px;
+    color: #273550;
+    font-size:100px;
+    font-family:fantasy;
+  
+  }
+
+  #Player{
+    display: grid;
+    height: 150px;
+    width: 150px;
+    background-color: #ed6464;
+    border-radius: 10%; 
+  }
+
+  #Winner{
+    display: grid;
+    height: 150px;
+    width: 150px;
+    background-color: #64ed92;
+    border-radius: 10%;
+  }
+
+  #reset{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 29px;
+    margin-left: 50px;
+    border-style: solid;
+    background-color: #303030;
+    font-weight: bold;
+    color:azure;
+    cursor: pointer;
+  }
+
+  #row{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin-left: 0px;
+  }
+
+}
