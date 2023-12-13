@@ -18,8 +18,8 @@ body{
 }
 
 .box{
-  width: var(--size);
-  height: var(--size);
+  width: 200px;
+  height: 200px;
   border-radius: 15%;
   border-style: solid;
   border-color: #273550;
@@ -89,6 +89,43 @@ body{
   padding-left: 50px;
 }
 
-:root{
-  --size: 200px;
+
+
+#score{
+  display: inline-block;
 }
+
+
+#WinTitle{
+  color: #273550;
+  font-size: 100px;
+  font-family: monospace;
+  text-decoration: underline;
+  padding-top: 100px;
+  padding-left: 60px;
+}
+
+#Winner{
+  display: grid;
+  height: 300px;
+  width: 300px;
+  background-color: #64ed92;
+  border-radius: 10%;
+}
+
+#spacer{
+  height:50px;
+}
+
+#reset{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 29px;
+  margin-left: 50px;
+  border-style: solid;
+  background-color: #303030;
+  font-weight: bold;
+  color:azure;
+}
+
